@@ -1,0 +1,90 @@
+:root {
+    --primary: #0a8f96;
+    --secundary: #07cab9;
+    --decrease: #ed7000;
+    --increase: #749e0c;
+    --reset: #e2e2e2;
+    --text: #13101d;
+    --text2: whitesmoke;
+    --fondo: #002f3b;
+}
+
+body {
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    background-color: var(--primary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    min-width: 315px;
+    height: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px var(--secundary);
+}
+
+.container h1 {
+    color: var(--text2);
+    font-weight: 600;
+    font-size: 3rem;
+    box-shadow: 2px 4px 2px 4px var(--secundary);
+}
+
+.menu {
+    padding-top: 20px;
+
+}
+
+@media (max-width: 469px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu button {
+        margin: 5px;
+    }
+}
+
+.decrease {
+    background-color: var(--decrease);
+    padding: 5px 40px;
+    border: 0;
+    border-radius: 12px;
+    color: var(--text2);
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--decrease);
+}
+
+.reset {
+    background-color: var(--reset);
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 12px;
+    color: var(--text);
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--reset);
+}
+
+.increase {
+    background-color: var(--increase);
+    padding: 5px 40px;
+    border: 0;
+    border-radius: 12px;
+    color: var(--text2);
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--increase);
+}
+
+#value {
+    color: var(--text2);
+    font-weight: bold;
+    font-size: 3.5rem;
+}

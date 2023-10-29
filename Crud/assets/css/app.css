@@ -1,0 +1,97 @@
+:root {
+    --color1 : rgba(88, 203, 88, .2);
+    --color2 : rgba(162, 175, 253, .2);
+    --color3 : #efefdf;
+    --color4: rgba(254, 85, 64, 0.922);
+    --color5: #4f73fc;
+    --transition: all 0.3s linear;
+    --box:  0px 4px 10px rgba(255, 255, 255, .1);
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(/7-Crud/assets/img/sonoma-2.webp);
+    box-sizing: border-box;
+}
+.container{
+    width: 420px;
+    background-color:var(--color2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .1);
+    box-shadow: var(--box);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.f-1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+.titulos{
+    text-align: center;
+    font-style: oblique;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color3);
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.input-box{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 36px 0px 0px 70px;
+    padding: 10px;
+    color: var(--color3);
+}
+
+.input-box::placeholder{
+    color: var(--color3);
+    padding: 10px;
+}
+.input-box:focus {
+    background-color: var(--color2);
+    border: 2px solid rgba(255, 255, 255, .5);
+}
+button[type=submit]{
+    background-color: var(--color4);
+    margin: 0;
+    color: #fff;
+    border: none;
+    border-radius: 0px 36px 70px 0px;
+    transition: var(--transition);
+}
+button[type=submit]:hover{
+    background-color: var(--color3);
+    color: var(--color5);
+}
+.item {
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+    text-transform: capitalize;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+.btn.edit {
+    color:#bde863;
+}
+.btn.delete{
+    color: #ff4b3a;
+}
+.btn:hover {
+    color:var(--color3);
+}
