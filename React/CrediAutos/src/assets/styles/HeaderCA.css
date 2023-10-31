@@ -1,0 +1,71 @@
+.ca-header{
+    min-width: 270px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.ca-logo-container{
+    justify-items: start;
+}
+
+.logo{
+    width: auto;    
+    height: 80px;
+}
+.ca-header-button{
+    padding: 0px 15px;
+    min-width: 270px;
+    border: none;
+    background-color: var(--secundary); 
+    font-size: 1rem;
+    color: var(--white);
+    transition: var(--transition);
+    cursor: pointer;
+    font-weight: 400;
+}
+.ca-header-button a{ 
+    font-size: 1.2rem;
+    text-decoration: none;   
+    color: var(--white);
+}
+.ca-header-button:hover{
+    background-color: var(--primary); 
+    color: var(--white);
+}
+.ca-header-button span{
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ca-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ca-logo-container{
+        display: grid;
+        justify-items: center;
+    }
+    .ca-header-button{
+        font-size: .8rem;
+        padding: 6px;
+    }
+    .ca-header-button a{ 
+        font-size: 1rem;
+    }
+}
+/* Estilos para tablets 
+@media (min-width: 768px) and (max-width: 1023px) {}*/
+/* Estilos para pantallas medianas y grandes (escritorios) 
+@media (min-width: 1024px) {}*/
+/* Estilos para pantallas extra grandes (monitores grandes) 
+@media (min-width: 1440px) {}*/ 

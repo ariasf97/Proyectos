@@ -1,0 +1,56 @@
+.ca-hero{
+    display: flex; 
+    align-items: center;
+    min-height:500px;
+    padding: 0px 20px;
+    margin-top: 85px;
+    background-image: url('src/assets/img/1920x-923Banner-index-1.0.webp');
+    background-size: cover;
+}
+.ca-hero-content{
+    flex: 1;
+}
+/* Estilos para el espacio vacío */
+.empty-space {
+    flex: 2 ; /* Hace que ocupe todo el espacio disponible en el contenedor */
+}
+.ca-hero-content h1{
+    background: linear-gradient(180deg,var(--white),#f6eded);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.2rem;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-clip:text; 
+}
+.ca-hero-content p{
+    color: var(--white);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ca-hero{
+        height: 705px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px 20px;
+        margin-top: 128px;
+        min-width: 270px;
+        background-image: url('src/assets/img/1920x-923Banner-indexMóvil-1.0.webp');
+    }
+    .ca-hero-content{
+        flex: 1;
+    }
+    .empty-space {
+    flex: 4; 
+    }
+    .ca-hero-content h1{
+        font-size: 2rem;
+    }
+
+}
