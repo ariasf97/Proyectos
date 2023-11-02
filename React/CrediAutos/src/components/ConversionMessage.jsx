@@ -15,7 +15,7 @@ export function ConversionMessage() {
             <div>
                 <p>
                     ¡No esperes más para acelerar hacia tu fututo! Descubre hoy mismo cómo podemos convertir tus anhelos de <strong>Moto nueva</strong>
-                    con un crédito vehicular a tu medida.<br/><br/> <center><strong className="ca-strongBlue">Fácil y Rapido</strong></center> 
+                    con un crédito vehicular a tu medida.<br/><br/> <strong className="ca-strongBlue">Fácil y Rapido</strong> 
                 </p>
             <ButtonAction/>
             </div>
