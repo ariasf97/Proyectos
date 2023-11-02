@@ -69,6 +69,7 @@
     }
 
     .ca-hero-content p {
+        font-size: 1.6rem;
         margin: 0;
     }
 }
@@ -128,7 +129,7 @@
     .ca-hero-content h1 {
         padding-top: 40px;
         margin-bottom: -20px;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .ca-hero-decoration {

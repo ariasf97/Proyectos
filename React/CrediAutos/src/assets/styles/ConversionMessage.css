@@ -1,0 +1,93 @@
+.ca-conversionMessage{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+}
+.ca-conversionMessage-content-1{
+    padding:20px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ca-conversionMessage-content-2 {
+    margin-top: -85px;
+    padding: 0px 0px 0px 180px;
+    display: flex;
+    align-items: center;
+}
+.ca-conversionMessage-content-2 div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ca-conversionMessage-logo{
+    width: auto;    
+    height: 148px;
+}
+.ca-conversionMessage p{
+    width: 610px;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+.ca-strongBlue{
+    color: var(--primary);
+    font-size: 1.7rem;
+}
+
+.ca-conversionMessage-img {
+    margin-left: -145px;
+    width: auto;
+    height: 600px;
+    margin-bottom: 85px;
+}
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ca-conversionMessage-logo{
+        display: none;
+    }
+    .ca-conversionMessage p{
+        width: auto;
+        font-size: 1.5rem;
+    }
+    .ca-conversionMessage-content-2 {
+        margin-top: 0;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;;
+    }
+    .ca-conversionMessage-img {
+        margin-left: 0;
+        width: auto;
+        height: 335px;
+        margin-bottom: 0;
+    }
+}
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ca-conversionMessage-content-2 {
+        margin-top: 0;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;;
+    }
+    .ca-conversionMessage-img {
+        margin-left: 0;
+        width: auto;
+        height: 620px;
+        margin-bottom: 0;
+    }
+}
+/* Estilos para pantallas medianas y grandes (escritorios) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    
+}
+/* Estilos para pantallas extra grandes (monitores grandes) */
+@media (min-width: 1440px) {}
