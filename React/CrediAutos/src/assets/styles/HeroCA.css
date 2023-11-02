@@ -1,56 +1,141 @@
-.ca-hero{
-    display: flex; 
-    align-items: center;
-    min-height:500px;
-    padding: 0px 20px;
-    margin-top: 85px;
+.ca-hero {
     background-image: url('src/assets/img/1920x-923Banner-index-1.0.webp');
     background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    min-width: 320px;
+    padding: 0px 20px;
+    margin-top: 85px;
 }
-.ca-hero-content{
-    flex: 1;
+
+.ca-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* Estilos para el espacio vacío */
-.empty-space {
-    flex: 2 ; /* Hace que ocupe todo el espacio disponible en el contenedor */
-}
-.ca-hero-content h1{
-    background: linear-gradient(180deg,var(--white),#f6eded);
+
+.ca-hero-content h1 {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(182deg, var(--white), #f6eded);
     font-weight: 900;
     font-style: italic;
-    font-size: 2.2rem;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip:text; 
+    background-clip: text;
 }
-.ca-hero-content p{
+
+.empty-space {
+    flex: 2;
+}
+
+.ca-hero-decoration {
+    padding: 0;
+    margin: 0;
+}
+
+.ca-hero-content p {
     color: var(--white);
     font-weight: 200;
-    font-size: 1.5rem;
+    margin: 0;
 }
-
-
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
-    .ca-hero{
+    .ca-hero {
         height: 705px;
-        display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 0px 20px;
         margin-top: 128px;
-        min-width: 270px;
         background-image: url('src/assets/img/1920x-923Banner-indexMóvil-1.0.webp');
     }
-    .ca-hero-content{
+
+    .ca-hero-content {
         flex: 1;
     }
-    .empty-space {
-    flex: 4; 
-    }
-    .ca-hero-content h1{
-        font-size: 2rem;
+
+    .ca-hero-content h1 {
+        font-size: 1.8rem;
+        text-align: center;
     }
 
+    .ca-hero-decoration {
+        width: 90vw;
+    }
+
+    .ca-hero-content article {
+        padding: 0px 20px;
+    }
+
+    .ca-hero-content p {
+        margin: 0;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ca-hero-content h1 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: -10px;
+    }
+
+    .ca-hero-decoration {
+        width: 35vw;
+    }
+
+    .ca-hero-content p {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .ca-hero-content article {
+        width: 300px;
+        min-width: 300px;
+        margin-top: -10px;
+        padding: 0px 20px;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes (escritorios) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .ca-hero-content {
+        flex: 1;
+    }
+
+    .ca-hero-content h1 {
+        margin-bottom: -20px;
+        font-size: 1.8rem;
+    }
+
+    .ca-hero-decoration {
+        width: 25vw;
+    }
+
+    .ca-hero-content p {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Estilos para pantallas extra grandes (monitores grandes) */
+@media (min-width: 1440px) {
+    .ca-hero-content {
+        flex: 1;
+    }
+
+    .ca-hero-content h1 {
+        padding-top: 40px;
+        margin-bottom: -20px;
+        font-size: 2.8rem;
+    }
+
+    .ca-hero-decoration {
+        width: 25vw;
+    }
+
+    .ca-hero-content p {
+        font-size: 1.6rem;
+    }
 }

@@ -5,8 +5,11 @@
   --primary: #2E85E4;
   --secundary: #f24f2f;
   --transition: all 0.5s linear;
+  --black: #303030;
+  --colorTextFooter:rgb(255 255 255 / 40%);
 }
 body{
+
   margin: 0;
   padding: 0;
   background-color: var(--white);

@@ -1,5 +1,5 @@
 .ca-header{
-    min-width: 270px;
+    min-width: 320px;
     background-color: var(--white);
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@
 }
 .ca-header-button{
     padding: 0px 15px;
-    min-width: 270px;
+    min-width: 375px;
     border: none;
     background-color: var(--secundary); 
     font-size: 1rem;
@@ -47,9 +47,7 @@
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     .ca-header{
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
     .ca-logo-container{
         display: grid;
@@ -63,9 +61,3 @@
         font-size: 1rem;
     }
 }
-/* Estilos para tablets 
-@media (min-width: 768px) and (max-width: 1023px) {}*/
-/* Estilos para pantallas medianas y grandes (escritorios) 
-@media (min-width: 1024px) {}*/
-/* Estilos para pantallas extra grandes (monitores grandes) 
-@media (min-width: 1440px) {}*/ 

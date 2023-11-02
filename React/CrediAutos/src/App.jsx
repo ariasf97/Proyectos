@@ -1,12 +1,14 @@
+import './App.css'
 import { HeaderCA } from './components/HeaderCA'
 import { HeroCA } from './components/HeroCA'
-import './App.css'
+import { FooterCA } from './components/FooterCA'
 
 function App() {
   return (
     <>
       <HeaderCA />
-      <HeroCA />
+      <HeroCA />  
+      <FooterCA/>
     </>
   )
 }
