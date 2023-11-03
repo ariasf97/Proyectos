@@ -1,10 +1,16 @@
 import ReactDOM from 'react-dom/client'
+import React from "react";
 import App from './App.jsx'
 import './index.css'
-import { UtmSourceProvider } from './components/UtmSourceProvider.jsx'
+import { UtmSourceProvider } from './context/UtmSourceProvider.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <UtmSourceProvider>
-    <App />
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <React.StrictMode>
+     <UtmSourceProvider>
+        <App/>
+    
     </UtmSourceProvider>
-)
+  </React.StrictMode>
+);

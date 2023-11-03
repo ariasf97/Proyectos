@@ -1,17 +1,13 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
-import { HeaderCA } from './components/HeaderCA'
-import { HeroCA } from './components/HeroCA'
-import { FooterCA } from './components/FooterCA'
-import { ConversionMessage } from './components/ConversionMessage'
+import { RoutesPath } from './routes/AppRouter'
 
+//aqui deberia estar el router
 function App() {
   return (
-    <>
-      <HeaderCA />
-      <HeroCA />
-      <ConversionMessage/>
-      <FooterCA/>
-    </>
+
+    <RouterProvider router={RoutesPath} />
+
   )
 }
 

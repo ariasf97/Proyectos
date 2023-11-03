@@ -1,11 +1,6 @@
-import { createContext, useContext, useState, useEffect } from 'react';
-
-const UtmSourceContext = createContext();
-
-export const useUtmSource = () => {
-    return useContext(UtmSourceContext);
-};
-
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import {UtmSourceContext} from './UtmSourceContext.jsx'
 export const UtmSourceProvider = ({ children }) => {
     const [utmSource, setUtmSource] = useState(null);
 
@@ -16,11 +11,15 @@ export const UtmSourceProvider = ({ children }) => {
         if (source) {
             setUtmSource(source); 
         }
-    }, []);
+    },[]);
 
     return (
         <UtmSourceContext.Provider value={utmSource}>
             {children}
         </UtmSourceContext.Provider>
     );
+};
+
+UtmSourceProvider.propTypes = {
+    children: PropTypes.node.isRequired, // Verifica que "children" sea un nodo (elemento React) y sea requerido.
 };
