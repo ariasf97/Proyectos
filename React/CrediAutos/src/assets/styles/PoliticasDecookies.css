@@ -1,0 +1,52 @@
+.ca-pol-cookies{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 300px;
+    min-width: 320px;
+    background-position: center;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(47, 135, 228, 0.3);
+        
+}
+}
+.ca-pol-cookies-title{
+    font-size: 1.8rem;
+    color: var(--white);
+    font-weight: 900;
+    z-index: 1;
+    letter-spacing: 3px;
+}
+.ca-pol-cookies-content{
+padding: 30px;
+}
+h2.ca-pol-cookies-subtitle {
+    color: var(--primary);
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.ca-pol-cookies-content p {
+    color: #2c2c2c;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 20px 0px 20px 0px;
+}
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ca-pol-cookies{
+        padding-top: 120px;
+
+    }
+}
