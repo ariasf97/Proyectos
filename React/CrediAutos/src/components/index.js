@@ -1,2 +1,5 @@
-export * from './ConversionMessage.jsx'
-export * from './HeroCA.jsx'
+export * from './Sections/ConversionMessage.jsx'
+export * from './Header/HeaderCA.jsx'
+export * from './Sections/SlideContent.jsx'
+export * from './Sections/Fqas.jsx'
+export * from './Forms/Form.jsx'

@@ -1,12 +1,13 @@
+
 .ca-hero {
-    background-image: url('src/assets/img/1920x-923Banner-index-1.0.webp');
+    background-image: url('../img/1920x-923Banner-index-1.0.webp');
     background-size: cover;
     display: flex;
     align-items: center;
     min-height: 500px;
     min-width: 320px;
     padding: 0px 20px;
-    margin-top: 85px;
+    margin-top: 80px;
 }
 
 .ca-hero-content {
@@ -14,6 +15,9 @@
     flex-direction: column;
     align-items: center;
 }
+.ca-hero-content article {
+    padding-bottom: 25px;
+    }
 
 .ca-hero-content h1 {
     padding: 0;
@@ -44,15 +48,16 @@
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
     .ca-hero {
-        height: 705px;
+        height: 767px;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 128px;
-        background-image: url('src/assets/img/1920x-923Banner-indexMóvil-1.0.webp');
+        background-image: url('../img/1920x-923Banner-indexMóvil-1.0.webp');
     }
 
     .ca-hero-content {
         flex: 1;
+        padding-bottom: 20px;
     }
 
     .ca-hero-content h1 {
@@ -69,7 +74,8 @@
     }
 
     .ca-hero-content p {
-        font-size: 1.6rem;
+        padding-bottom: 15px;
+        font-size: 1.2rem;
         margin: 0;
     }
 }
@@ -103,9 +109,10 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     .ca-hero-content {
         flex: 1;
+        padding-bottom: 40px;
     }
-
     .ca-hero-content h1 {
+        padding-top: 60px;
         margin-bottom: -20px;
         font-size: 1.8rem;
     }
@@ -116,6 +123,7 @@
 
     .ca-hero-content p {
         font-size: 1.5rem;
+        padding-left: 25px;
     }
 
 }
@@ -124,6 +132,7 @@
 @media (min-width: 1440px) {
     .ca-hero-content {
         flex: 1;
+        padding-bottom: 45px;
     }
 
     .ca-hero-content h1 {

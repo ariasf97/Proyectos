@@ -17,3 +17,8 @@
     z-index: 2;
 }
 .ca-conversionMessage-button-action:hover { background-position: right center; }
+/* Style the modal content */
+.ca-conversionMessage-modal-content {
+    background-color: red;
+    padding: 20px;
+}

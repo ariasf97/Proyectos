@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
-import { HeaderCA } from '../components/HeaderCA.jsx';
-import { FooterCA } from '../components/FooterCA.jsx';
+import { HeaderCA } from '../components/Header/HeaderCA.jsx';
+import { FooterCA } from '../components/Footer/FooterCA.jsx';
 
 export const Plantilla = ({ children }) => {
     return (

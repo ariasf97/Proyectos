@@ -1,0 +1,117 @@
+.ca-form{
+    padding: 25px;
+    border-radius: 15px;   
+    background-color: rgb(255, 255, 255,0.4);
+}
+.input-container{
+    position: relative;
+    width: 385px;
+    padding-bottom: 10px;
+}
+.subTitle{
+    padding-bottom: 20px;
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+.ca-form label{
+    color: var(--white);
+    font-size: 1.1rem;
+}
+.input-container input{
+    width: 100%;
+    padding: 14px 8px 8px 8px;
+    border: 1px solid #2E85E4;
+    border-radius: 5px;
+    background: var(--white) ;
+    outline: none;
+    color: var(--primary);
+    font-size: 1em;
+}
+.input-container span{
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.input-container input ~ span {
+    left: 0;
+    color: var(--white);
+    transform: translateX(10px) translateY(-12px);
+    font-size: 0.8em;
+    padding: 2px 10px;
+    background: var(--secundary);
+    border-radius: 8px 0px;
+    letter-spacing: 0.1em;
+}
+.ca-form a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 400;
+}
+.ca-form a:hover {
+    color: var(--secundary);
+}
+.ca-form-button{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submit{
+    font-size: 1rem;
+    border: none;
+    background-image: linear-gradient(to right, var(--secundary) 0%, var(--secundary) 51%,var(--primary) 100%);
+    padding: 5px 60px;
+    text-align: center;
+    transition: var(--transition);
+    background-size: 200% auto;
+    color: var(--white);
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);   
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+.submit:hover { background-position: right center; }
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ca-form{
+        max-width: 360px;
+    }
+    .input-container {
+        max-width: 273px;
+    }
+    .submit{
+        font-size: 0.9rem;
+    }
+    .subTitle{
+        font-size: 1rem;
+    }
+}
+
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ca-form{
+        max-width: 500px;
+    }
+    .input-container {
+        max-width: 380px;
+    }
+    .submit {
+        font-size: 0.9rem;
+    }
+    .subTitle{
+        font-size: 1rem;
+    }
+    .ca-hero-content p {
+        padding-bottom: 15px;
+    }
+    .ca-form label {        
+        font-size: 0.8rem;
+    }
+}

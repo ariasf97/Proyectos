@@ -12,7 +12,7 @@
     align-items: center;
 }
 .ca-conversionMessage-content-2 {
-    margin-top: -85px;
+    margin-top: -60px;
     padding: 0px 0px 0px 30px;
     display: flex;
     align-items: center;
@@ -23,12 +23,8 @@
     flex-direction: column;
 }
 
-.ca-conversionMessage-logo{
-    width: auto;    
-    height: 148px;
-}
 .ca-conversionMessage p{
-    width: 575px;
+    width: 700px;
     font-weight: 200;
     font-size: 1.5rem;
 }
@@ -38,10 +34,9 @@
 }
 
 .ca-conversionMessage-img {
-    margin-left: -145px;
     width: auto;
-    height: 500px;
-    margin-bottom: 145px;
+    height: 550px;
+    margin-bottom: 85px;
 }
 
 
@@ -70,7 +65,8 @@
     }
 }
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    
     .ca-conversionMessage-content-2 {
         margin-top: 0;
         padding: 20px;
@@ -78,10 +74,13 @@
         align-items: center;
         flex-direction: column-reverse;;
     }
+    .ca-conversionMessage p {
+        max-width: 470px;
+    }
     .ca-conversionMessage-img {
         margin-left: 0;
         width: auto;
-        height: 620px;
+        height: 465px;
         margin-bottom: 0;
     }
 }
