@@ -2,14 +2,16 @@ import { useEffect } from 'react';
 import '../../assets/styles/Form.css';
 import { useForm } from 'react-hook-form';
 import { useToast } from '@chakra-ui/react';
-import { generarToken, enviarDatos, buildLeadData } from '../../services/api';
-
+import { generarToken, ejecutarLogica } from '../../services/api';
 
 export function Form() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const toast = useToast();
+
     const onSubmit = async (formData) => {
         try {
+            await ejecutarLogica(formData);
+
             toast.promise(
                 (async () => {
                     toast({
@@ -17,13 +19,6 @@ export function Form() {
                         status: 'info',
                         isClosable: true,
                     });
-
-                    const tokenData = await generarToken('rdflorez', 'pruebaetb');
-                    const leadRequest = buildLeadData(formData, tokenData);
-                    console.log('URL completa:', leadRequest.url);
-
-                    const response = await enviarDatos(leadRequest.url, leadRequest.headers);
-                    console.log(JSON.stringify(response.data));
 
                     return 'Datos enviados con éxito';
                 })(),
@@ -44,20 +39,19 @@ export function Form() {
         }
     };
 
-
     const handleSubmissionError = (error) => {
         console.error('Error al realizar la solicitud:', error.message);
 
         toast({
             title: 'Error al enviar datos',
             status: 'error',
-            description: 'Hubo un problema al enviar los datos. Por favor, inténtelo de nuevo.',
+            description: 'Hubo un problema al enviar los datos. Por favor, inténtalo de nuevo.',
             isClosable: true,
         });
     };
 
     useEffect(() => {
-        generarToken('', '');
+        generarToken('rdflorez', 'pruebaetb');
     }, []);
 
     useEffect(() => {

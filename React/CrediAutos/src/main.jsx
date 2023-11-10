@@ -4,7 +4,6 @@ import App from './App.jsx'
 import './index.css'
 import { UtmSourceProvider } from './context/UtmSourceProvider.jsx'
 import './services/fontAwesone.js'
-
 import { ChakraProvider } from '@chakra-ui/react'
 
 

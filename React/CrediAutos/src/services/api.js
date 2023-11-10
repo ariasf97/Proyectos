@@ -1,14 +1,19 @@
 import axios from 'axios';
 
-export const generarToken = async (login, pass) => {
+const instance = axios.create({
+    baseURL: 'https://services.emergiacc.com/',
+});
+
+export const generarToken = async () => {
+    const USER = 'rdflorez';
+    const PASS = 'pruebaetb';
     try {
-        const response = await axios.get('', {
+        const response = await instance.get('WsLeads/token/getToken', {
             params: {
-                Login: login,
-                Password: pass,
+                Login: USER,
+                Password: PASS,
             },
         });
-        console.log("Token generado:", response.data);
         return response.data;
     } catch (error) {
         console.error('Error al generar el token:', error.message);
@@ -17,13 +22,20 @@ export const generarToken = async (login, pass) => {
 };
 
 export const enviarDatos = async (url, headers) => {
-    return await axios.post(url, null, { headers });
+    try {
+        const response = await instance.post(url, null, { headers });
+        console.log('Respuesta al enviar datos:', response.data);
+        return response.data;
+    } catch (error) {
+        console.error('Error al enviar datos:', error.message);
+        throw error;
+    }
 };
 
 export const buildLeadData = (formData, token) => {
     const leadData = {
         cliente: 20,
-        email: "ClienteCrediautos@.com",
+        email: "ClienteCrediautos@emergiacc.com",
         proveedor: 19,
         categoriaOrigen: 1,
         servicio: 149001004,
@@ -52,10 +64,21 @@ export const buildLeadData = (formData, token) => {
         .join('&');
 
     return {
-        url: `?${leadQueryString}`,
+        url: `https://services.emergiacc.com/WSLeads/lead/insertar?${leadQueryString}`,
         headers: {
             'Authorization': `Bearer ${token.access_token}`,
             'Content-Type': 'application/json',
         },
     };
+};
+
+export const ejecutarLogica = async (formData) => {
+    try {
+        const token = await generarToken();
+        const leadData = buildLeadData(formData, token);
+        await enviarDatos(leadData.url, leadData.headers);
+    } catch (error) {
+        console.error('Error en la ejecución:', error.message);
+        throw error;
+    }
 };
