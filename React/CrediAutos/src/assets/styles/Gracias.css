@@ -1,0 +1,72 @@
+.ca-gracias {
+    background-image: url('/src/assets//img/1920x-923Banner-index-1.0.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.ca-gracias-content{
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ca-gracias-content h2{
+    padding: 10px;
+    font-size: 2.7rem;
+    color: var(--secundary);
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.ca-gracias-content p{
+    padding: 0px 0px 20px 0px;
+    font-size: 1.1rem;
+    color: #2c2c2c;
+    font-weight: 400;
+}
+
+.ca-gracias-content Button {
+    background-color: var(--primary);
+    color: var(--white);
+    transition: var(--transition);
+}
+.ca-gracias-content Button:hover {
+    background-color: var(--secundary)
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .ca-gracias {
+        align-items: center;
+        background-image: url('/src/assets//img/1920x-923Banner-indexMóvil-1.0.webp');
+    }
+    .ca-gracias-content {
+        margin-top: 185px;
+    }
+    .ca-gracias-content h2{
+        font-size: 1.7rem; 
+    }
+    .ca-gracias-content p{
+        font-size: 1rem;
+    }
+}
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ca-gracias {
+        background-image: url('/src/assets//img/1920x-923Banner-indexMóvil-1.0.webp');  
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .ca-gracias-content {
+        margin-bottom: 185px;
+    }
+}

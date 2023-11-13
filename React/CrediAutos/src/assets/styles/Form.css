@@ -14,7 +14,7 @@
     color: white;
     font-size: 1.2rem;
 }
-.ca-form label{
+.label{
     color: var(--white);
     font-size: 1.1rem;
 }
@@ -111,7 +111,7 @@
     .ca-hero-content p {
         padding-bottom: 15px;
     }
-    .ca-form label {        
+    .label {        
         font-size: 0.8rem;
     }
 }

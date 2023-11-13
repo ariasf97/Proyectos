@@ -7,9 +7,9 @@ import logoN from '../../assets/img//Logo-1.0.webp'
 
 export function HeaderCA() {
     const utmSource = UseUtmSource();
-    const number = changePhoneNumber(utmSource);
+    const number = changePhoneNumber(utmSource.utmSource);
     const navigate = useNavigate();
-
+    console.log('utmSource',utmSource)
     const Home = ()=>{
         navigate("/");
     }

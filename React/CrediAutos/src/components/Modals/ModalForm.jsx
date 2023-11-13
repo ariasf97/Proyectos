@@ -12,17 +12,17 @@ import { Form } from '../Forms/Form';
 export const ModalForm = ({ isOpen, onClose }) => {
     return (
         <>
-            <Modal isOpen={isOpen} onClose={onClose} >
+            <Modal isOpen={isOpen} onClose={onClose}  isCentered={true}>
                 <ModalOverlay  />
-                <ModalContent bg='var(--primary)' pt={10} pb={10} pl={2} pr={2} maxW='lg' >
+                <ModalContent bg='var(--bgModal)' pt={10} pb={10} pl={2} pr={2} maxW='lg'  borderRadius='12px' >
                     <ModalCloseButton
-                        color='var(--secundary)' // Cambia el color a rojo
+                        color='var(--secundary)' 
                         size="md"
-                        mr={4}  // Establece el tamaño a grande
+                        mr={4} 
                         fontSize={20}
                     />
                     <ModalBody>
-                        <Form />
+                        <Form isActive={false}/>
                     </ModalBody>
                 </ModalContent>
             </Modal>

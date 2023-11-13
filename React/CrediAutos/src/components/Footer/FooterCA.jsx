@@ -13,8 +13,8 @@ export function FooterCA() {
                 <ul>
                     <li>
                         <h3>Nuestras Politicas</h3>
-                        <Link to={`/politica-cookies`}>Política de cookies</Link>
-
+                        <Link to={`/Política-de-cookies`}>Política de cookies</Link>
+                        <Link to={`/Política-de-Privacidad`}>Política de Privacidad</Link>
                     </li>
                 </ul>
             </section>
