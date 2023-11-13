@@ -7,7 +7,11 @@ export function Fqas(){
     return(
         <section className='ca-fqas'>
             <section className="ca-fqas-section-1">
-            <img src={fqasIMG} alt="FQAS" />
+            <img 
+            width='auto'
+            height='550px'
+            src={fqasIMG} 
+            alt="FQAS" />
             <article className="ca-fqas-content">
                 <h2 className='subTitle-2'>¿Cómo funciona?</h2>
                 <ul style={{listStyleType:'none'}}>

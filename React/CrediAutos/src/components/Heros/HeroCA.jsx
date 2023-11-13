@@ -1,6 +1,6 @@
 
 import '../../assets/styles/HeroCA.css';
-import {Form} from '../Forms/Form';
+import { Form } from '../Forms/Form';
 import Deco from '../../assets/img/deco-1.webp'
 export function HeroCA() {
     return (
@@ -8,12 +8,16 @@ export function HeroCA() {
             <div className="empty-space"></div>
             <section className="ca-hero-content">
                 <h1 id='formu'>¡Conduce a tus sueños!</h1>
-                <img className='ca-hero-decoration' src={Deco} alt="¡Conduce a tus sueños!" />
+                <img
+                    width='25vw'
+                    height='auto'
+                    className='ca-hero-decoration' src={Deco}
+                    alt="¡Conduce a tus sueños!" />
                 <article>
                     <p>Financiamos tus sueños sobre ruedas, ofrecíendote tasas competitivas, plazos flexibles y un proceso <strong>fácil y rápido.</strong></p>
                 </article>
                 <section>
-                <Form />
+                    <Form />
                 </section>
             </section>
         </section>

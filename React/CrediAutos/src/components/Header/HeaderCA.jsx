@@ -16,7 +16,9 @@ export function HeaderCA() {
     return (
         <header className="ca-header">
             <div className="ca-logo-container" onClick={Home}>
-                <img className="logo" src={logoN} alt="CrediAutos - Logo" />
+                <img 
+                className="logo" src={logoN} 
+                alt="CrediAutos - Logo" />
             </div>
             <button className="ca-header-button">
                 Llámanos GRATIS <a href="#">{number}<br /><span>*Línea exclusiva de ventas</span></a>

@@ -8,6 +8,8 @@ export function ConversionMessage() {
         <section className="ca-conversionMessage"  >
             <article className='ca-conversionMessage-content-1'>
                 <img
+                    width='auto'
+                    height='148px'
                     style={{ width: 'auto', height: '148px' }}
                     src={logoImg}
                     alt="CrediAutos - Logo"
@@ -31,6 +33,8 @@ export function ConversionMessage() {
                     <img 
                     className='ca-conversionMessage-img' 
                     src={actionIMg} 
+                    width='auto'
+                    height='550px'
                     alt="CrediAutos - Encuentra tu libertad sobre dos ruedas"
                     />
                 </div>

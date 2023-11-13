@@ -8,6 +8,8 @@ export function FooterCA() {
             <section className="ca-footer-content">
                 <img src={logoBlanco} 
                 alt='Crediautos - logo'
+                width='auto'
+                height='60px'
                 style={{ width: 'auto',margin: '0 0 30px', height: '60px', display: 'block'}}
                 />
                 <ul>
