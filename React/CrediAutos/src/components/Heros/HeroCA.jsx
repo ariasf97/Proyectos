@@ -14,7 +14,7 @@ export function HeroCA() {
                     className='ca-hero-decoration' src={Deco}
                     alt="¡Conduce a tus sueños!" />
                 <article>
-                    <p>Financiamos tus sueños sobre ruedas, ofrecíendote tasas competitivas, plazos flexibles y un proceso <strong>fácil y rápido.</strong></p>
+                    <p>Financiamos tus sueños sobre ruedas, ofreciéndote tasas competitivas, plazos flexibles y un proceso<strong> fácil y rápido.</strong></p>
                 </article>
                 <section>
                     <Form />

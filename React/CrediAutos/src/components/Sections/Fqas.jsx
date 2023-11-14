@@ -17,7 +17,7 @@ export function Fqas(){
                 <ul style={{listStyleType:'none'}}>
                     <li><FontAwesomeIcon icon={fa1} size="3x" style={{color: "#2e85e4",}} /> Elige que en qué vehículo estás interesado</li>
                     <li><FontAwesomeIcon icon={fa2} size="3x" style={{color: "#2e85e4",}}/> Llámanos o déjanos tu teléfono de contacto</li>
-                    <li><FontAwesomeIcon icon={fa3} size="3x" style={{color: "#2e85e4",}}/> Un asesor se comunicara contigo para que juntos elegir el crédito que mejor se adapte a tus necesidades.</li>
+                    <li><FontAwesomeIcon icon={fa3} size="3x" style={{color: "#2e85e4",}}/> Un asesor se comunicará contigo para que juntos elegir el crédito que mejor se adapte a tus necesidades.</li>
                 </ul>
             </article>
             </section>

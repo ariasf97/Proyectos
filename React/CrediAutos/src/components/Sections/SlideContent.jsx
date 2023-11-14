@@ -1,7 +1,7 @@
 import '../../assets/styles/SlideContent.css';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {ButtonAction} from '../Buttons/ButtonAction'
+import { ButtonAction } from '../Buttons/ButtonAction'
 import bg from '../../assets/img/1920x-690-Banner-inferior-1.0.webp'
 // Import Swiper styles
 import 'swiper/css';
@@ -27,7 +27,7 @@ export function SlideContent() {
                 clickable: true,
             }}
             navigation={true}
-            modules={[Autoplay ,Parallax, Pagination, Navigation]}
+            modules={[Autoplay, Parallax, Pagination, Navigation]}
             className="mySwiper"
         >
             <div
@@ -35,7 +35,6 @@ export function SlideContent() {
                 className="parallax-bg"
                 style={{
                     backgroundImage: `url(${bg})`,
-                    
                 }}
                 data-swiper-parallax="-23%"
             ></div>
@@ -45,11 +44,11 @@ export function SlideContent() {
                 </div>
                 <article className="text" data-swiper-parallax="-200">
                     <p>
-                        Estammos aquí para ayudarte a alcanzar ese sueño. Ofrecemos tasas competitivas y
+                        Estamos aquí para ayudarte a alcanzar ese sueño. Ofrecemos tasas competitivas y
                         plazos flexibles para que puedas elegir el auto de tus sueños sin comprometer tu
                         presupuesto.
                     </p>
-                   <ButtonAction />
+                    <ButtonAction />
                 </article>
             </SwiperSlide>
             <SwiperSlide>

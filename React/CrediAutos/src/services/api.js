@@ -23,9 +23,9 @@ export const generarToken = async () => {
 };
 
 
-export const realizarPeticionPost = async (utmSource,utmMedium,utmCampaign, telefono, categoriaLead2, token) => {
+export const realizarPeticionPost = async (utmSource,utmMedium,utmCampaign,gclid, telefono, categoriaLead2, token) => {
     const baseURL = 'https://services.emergiacc.com/WSLeads/lead/insertar';
-    const url = `${baseURL}?cliente=20&email=ClienteCrediautos@emergiacc.com&proveedor=19&categoriaOrigen=1&servicio=149001004&centro=CN&telefono=${telefono}&producto=Crediautos&categoriaLead1=CategoriaLead1&categoriaLead2=${categoriaLead2}&nombreCompleto=ClienteCrediautos&familiaCliente=1&fecha=${encodeURIComponent('2019-12-27 09:26:00')}&informacionExtra={"tipoTelefonia":"1","tipoLlamada":"1","fechaLlamadaProgramada":"2022-11-05 08:57:20","segmento":"CREDIAUTO","referenciador":"${utmSource}","id_backlanding":"glic","tipoCampagna":"${utmMedium}","infoCampagna":"${utmCampaign}","ipUsuario":"ip"}`;
+    const url = `${baseURL}?cliente=20&email=ClienteCrediautos@emergiacc.com&proveedor=19&categoriaOrigen=1&servicio=149001004&centro=CN&telefono=${telefono}&producto=Crediautos&categoriaLead1=CategoriaLead1&categoriaLead2=${categoriaLead2}&nombreCompleto=ClienteCrediautos&familiaCliente=1&fecha=${encodeURIComponent('2019-12-27 09:26:00')}&informacionExtra={"tipoTelefonia":"1","tipoLlamada":"1","fechaLlamadaProgramada":"2022-11-05 08:57:20","segmento":"CREDIAUTO","referenciador":"${utmSource}","id_backlanding":"${gclid}","tipoCampagna":"${utmMedium}","infoCampagna":"${utmCampaign}","ipUsuario":"ip"}`;
     const headers = {
         'Authorization': `Bearer ${token}`
     };
