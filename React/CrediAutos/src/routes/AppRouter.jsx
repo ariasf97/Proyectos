@@ -3,6 +3,7 @@ import { HomePages } from "../pages";
 import { PoliticaCookiesPages, PoliticaPrivacidadPages} from "../pages";
 import ScrollToTop from "../components/ScrollToTop";
 import { Gracias } from "../pages/Gracias";
+import CookieBanner from "../components/CookiesPolicy";
 
 
 export const RoutesPath = createBrowserRouter([
@@ -11,6 +12,7 @@ export const RoutesPath = createBrowserRouter([
         element: (
             <>
                 <ScrollToTop />
+                <CookieBanner/>
                 <HomePages />
             </>
         ),
@@ -20,6 +22,7 @@ export const RoutesPath = createBrowserRouter([
         element: (
             <>
                 <ScrollToTop />
+                <CookieBanner/>
                 <PoliticaCookiesPages />
             </>
         ),
@@ -29,6 +32,7 @@ export const RoutesPath = createBrowserRouter([
         element: (
             <>
                 <ScrollToTop />
+                <CookieBanner/>
                 <PoliticaPrivacidadPages/>
             </>
         ),
@@ -38,6 +42,7 @@ export const RoutesPath = createBrowserRouter([
         element: (
             <>
                 <ScrollToTop />
+                <CookieBanner/>
                 <Gracias />
             </>
         ),
