@@ -3,7 +3,7 @@ import {UseUtmSource} from '../../hooks/UseUtmSource'
 import {changePhoneNumber} from '../../services/changePhoneNumber'
 import ProgressBar from '../Sections/ProgressBar';
 import { useNavigate } from "react-router-dom";
-import logoN from '../../assets/img//Logo-1.0.webp'
+import logoN from '../../assets/img/logo-dist.webp'
 
 export function HeaderCA() {
     const utmSource = UseUtmSource();

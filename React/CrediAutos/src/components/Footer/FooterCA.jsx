@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import '../../assets/styles/FooterCA.css';
-import logoBlanco from '../../assets/img/Logo-1.0-(Blanco).webp'
+import logoBlanco from '../../assets/img/logo-dist-blanco.webp'
 export function FooterCA() {
     return (
         <footer className='ca-footer'>
