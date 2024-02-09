@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,700&display=swap');
+
+:root {
+    font-family: DM sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --white: #FFFFFF;
+    --primary: #2E85E4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+}
